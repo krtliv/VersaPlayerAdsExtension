@@ -50,7 +50,7 @@ public class VersaPlayerAdsManager: VersaPlayerExtension, IMAAdsLoaderDelegate, 
     }
     
     public func requestAds(using pip: Bool = false) {
-        let adDisplayContainer = IMAAdDisplayContainer(adContainer: player.renderingView, companionSlots: self.adsManager == nil ? nil : displayDelegate?.companionSlots(for: self.adsManager!))
+        let adDisplayContainer = IMAAdDisplayContainer(adContainer: player.renderingView,viewController: controller, companionSlots: self.adsManager == nil ? nil : displayDelegate?.companionSlots(for: self.adsManager!))
         var request: IMAAdsRequest
         if !pip {
             request = IMAAdsRequest(
