@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Jose Quintero' => 'jose.juan.qm@gmail.com' }
   s.source           = { :git => 'https://github.com/krtliv/VersaPlayerAdsExtension.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/josejuanqm'
-  s.ios.deployment_target = 11.0'
+  s.ios.deployment_target = '11.0'
   s.source_files = 'VersaPlayerAdsExtension/Classes/**/*'
   s.dependency 'VersaPlayer'
   s.dependency 'GoogleAds-IMA-iOS-SDK', "3.13.0"
